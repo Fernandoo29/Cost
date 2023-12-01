@@ -16,7 +16,7 @@ function ProjectForm({handleSubmit, btnText, projectData}){
             headers: {
                 'Content-Type': 'application/json'
             }
-        })
+        }) 
         .then(resp => resp.json())
         .then(data => setCategories(data))
         .catch(err => console.log(err));
